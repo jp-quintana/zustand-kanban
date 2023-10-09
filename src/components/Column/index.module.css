@@ -1,0 +1,31 @@
+.column {
+  background: var(--COLOR-GRAY-DARK);
+  min-height: 20rem;
+  width: 33%;
+  max-width: 20rem;
+  margin: 0 1rem;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title_wrapper p {
+  color: #fff;
+}
+
+.title_wrapper button {
+  color: #000;
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.title_wrapper button:hover {
+  background: var(--COLOR-GRAY-LIGHT);
+  cursor: pointer;
+}
