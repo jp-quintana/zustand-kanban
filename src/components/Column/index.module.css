@@ -29,3 +29,36 @@
   background: var(--COLOR-GRAY-LIGHT);
   cursor: pointer;
 }
+
+.modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: #fff;
+  z-index: 1;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.modal_content input {
+  padding: 1rem;
+}
+
+.modal_content button {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+}

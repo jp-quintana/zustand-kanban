@@ -12,8 +12,10 @@ const Task = ({ title }) => {
       <div>{task.title}</div>
       <div className={styles.bottom_wrapper}>
         <div></div>
-        <div className={`${styles.status} ${styles[task.state.toLowerCase()]}`}>
-          {task.state}
+        <div
+          className={`${styles.status} ${styles[task.status.toLowerCase()]}`}
+        >
+          {task.status}
         </div>
       </div>
     </div>
