@@ -6,6 +6,10 @@
   margin: 0 1rem;
   border-radius: 4px;
   padding: 0.5em;
+  border: dashed transparent 4px;
+}
+.column.drop {
+  border: dashed #fff 4px;
 }
 
 .title_wrapper {
