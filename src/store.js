@@ -24,7 +24,6 @@ const store = (set) => ({
     set((state) => ({ draggedTaskId: id }));
   },
   moveTask: (id, status) => {
-    console.log('moveTask', id, status);
     return set((state) => ({
       tasks: state.tasks.map((task) =>
         task.id === id ? { id, title: task.title, status } : task
@@ -33,4 +32,14 @@ const store = (set) => ({
   },
 });
 
+// const log = (config) => (set, get, api) =>
+//   config(
+//     (...args) => {
+//       console.log(args);
+//       set(...args);
+//     },
+//     get,
+//     api
+//   );
+// export const useStore = createWithEqualityFn(log(store, shallow));
 export const useStore = createWithEqualityFn(store, shallow);

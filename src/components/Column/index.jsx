@@ -63,7 +63,6 @@ const Column = ({ status }) => {
     setDraggedTaskIdId(null);
   };
 
-  console.log(tasks);
   return (
     <div
       className={`${styles.column} ${drop && styles.drop}`}
